@@ -5,14 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>A Tale of Two Cities</title>
+    <title>A Tale of Two Cities | Charles Dickens</title>
 
     <meta name="description" content="An excerpt from A Tale of Two Cities by Charles Dickens, published in 1859.">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
+        body {
+            @apply bg-gray-100 text-gray-800 leading-7;
+        }
 
+        header {
+            @apply bg-blue-900 text-white text-center py-10 px-[8%];
+        }
+
+        header h1 {
+            @apply text-3xl md:text-4xl font-bold;
+        }
+
+        main {
+            @apply max-w-4xl mx-auto px-6 py-8 md:px-10;
+        }
+
+        main p {
+            @apply mb-5;
+        }
+
+        main h2 {
+            @apply text-2xl font-bold text-blue-900 mt-10 mb-4 border-b border-blue-200 pb-2;
+        }
+
+        main h3 {
+            @apply text-xl font-semibold text-blue-800 mt-8 mb-3;
+        }
+
+        footer {
+            @apply bg-gray-200 text-gray-700 text-center py-6 px-6 mt-8;
+        }
+
+        footer p {
+            @apply text-sm;
+        }
+
+        .intro {
+            @apply bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-700;
+        }
     </style>
 
 </head>
@@ -21,66 +59,72 @@
 
     <header>
         <h1>A Tale of Two Cities</h1>
+        <p class="mt-3 text-blue-100">
+            A novel by Charles Dickens, published in 1859
+        </p>
     </header>
 
     <main>
 
-        <p>
-            It was the best of times, it was the worst of times, it was the age
-            of wisdom, it was the age of foolishness, it was the epoch of belief,
-            it was the epoch of incredulity, it was the season of Light, it was
-            the season of Darkness, it was the spring of hope, it was the winter
-            of despair.
-        </p>
+        <section class="intro">
+            <p>
+                It was the best of times, it was the worst of times, it was the age
+                of wisdom, it was the age of foolishness, it was the epoch of belief,
+                it was the epoch of incredulity, it was the season of Light, it was
+                the season of Darkness, it was the spring of hope, it was the winter
+                of despair.
+            </p>
 
-        <p>
-            We had everything before us, we had nothing before us, we were all
-            going direct to Heaven, we were all going direct the other way - in
-            short, the period was so far like the present period, that some of
-            its noisiest authorities insisted on its being received, for good or
-            for evil, in the superlative degree of comparison only.
-        </p>
+            <p class="mb-0">
+                We had everything before us, we had nothing before us, we were
+                all going direct to Heaven, we were all going direct the other way.
+            </p>
+        </section>
 
-        <h2>Small Heading</h2>
+        <section>
+            <h2>About the Novel</h2>
 
-        <p>
-            There were a king with a large jaw and a queen with a plain face,
-            on the throne of England; there were a king with a large jaw and a
-            queen with a fair face, on the throne of France. In both countries
-            it was clearer than crystal to the lords of the State preserves of
-            loaves and fishes, that things in general were settled for ever.
-        </p>
+            <p>
+                <i>A Tale of Two Cities</i> is a historical novel written by
+                Charles Dickens and published in 1859. The story takes place
+                in London and Paris before and during the French Revolution.
+            </p>
 
-        <h2>Small Heading</h2>
+            <p>
+                The novel explores themes of sacrifice, justice, love, and
+                resurrection. It follows several characters whose lives become
+                connected during a period of political and social change.
+            </p>
 
-        <p>
-            All these things, and a thousand like them, came to pass in and
-            close upon the dear old year one thousand seven hundred and
-            seventy-five. Environed by them, while the Woodman and the Farmer
-            worked unheeded, those two of the large jaws, and those other two
-            of the plain and the fair faces, trod with stir enough, and carried
-            their divine rights with a high hand.
-        </p>
+            <h3>The Opening Lines</h3>
 
-        <h3>Smaller Heading</h3>
+            <p>
+                The famous opening contrasts opposite experiences and emotions.
+                By describing the time as both the best and worst, Dickens
+                introduces a world full of conflict, uncertainty, and change.
+            </p>
 
-        <p>
-            A wonderful fact to reflect upon, that every human creature is
-            constituted to be that profound secret and mystery to every other.
-            A solemn consideration, when I enter a great city by night, that
-            every one of those darkly clustered houses encloses its own secret;
-            that every room in every one of them encloses its own secret; that
-            every beating heart in the hundreds of thousands of breasts there,
-            is, in some of its imaginings, a secret to the heart nearest it!
-        </p>
+            <h3>Charles Dickens</h3>
+
+            <p>
+                Charles Dickens was an English novelist known for writing
+                about society, poverty, and the lives of ordinary people.
+                His works remain widely read today.
+            </p>
+        </section>
+
+        <div class="text-center mt-10">
+            <a href="../index.html"
+               class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">
+                &larr; Back to Home Page
+            </a>
+        </div>
 
     </main>
 
     <footer>
-        <p>
-            <em>A Tale of Two Cities</em> by Charles Dickens,
-            published by Chapman and Hall in 1859.
-        </p>
+        <p>A Tale of Two Cities by Charles Dickens</p>
+        <p class="mt-1">Student: Nawfal Zahidi | Student ID: 80124</p>
     </footer>
 
 </body>
