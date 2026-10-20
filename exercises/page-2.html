@@ -5,84 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Purple Rain</title>
+    <title>Purple Rain | Prince and The Revolution</title>
 
     <meta name="description"
-          content="Information about Purple Rain by Prince and The Revolution.">
+          content="Discover the history, recording, and legacy of Purple Rain by Prince and The Revolution.">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
+        body {
+            @apply bg-purple-50 text-gray-800 leading-7;
+        }
 
+        header {
+            @apply bg-purple-950 text-white text-center py-12 px-6;
+        }
+
+        header h1 {
+            @apply text-4xl md:text-5xl font-bold;
+        }
+
+        header p {
+            @apply mt-3 text-purple-200;
+        }
+
+        main {
+            @apply max-w-4xl mx-auto px-6 py-10 md:px-10;
+        }
+
+        main section {
+            @apply bg-white rounded-lg p-6 mb-7 shadow-sm border border-purple-100;
+        }
+
+        main h2 {
+            @apply text-2xl font-bold text-purple-900 mb-4 border-b border-purple-200 pb-2;
+        }
+
+        main p {
+            @apply mb-4;
+        }
+
+        .quote {
+            @apply border-l-4 border-purple-500 bg-purple-50 p-4 rounded-r-md italic;
+        }
+
+        .source {
+            @apply text-sm text-gray-500;
+        }
+
+        footer {
+            @apply bg-purple-950 text-purple-100 text-center py-6 px-6 mt-8;
+        }
+
+        footer p {
+            @apply text-sm;
+        }
     </style>
 
 </head>
 
 <body>
 
+    <!-- Page Header -->
     <header>
+        <p class="uppercase tracking-widest text-sm">Music • History • Legacy</p>
         <h1>Purple Rain</h1>
+        <p>Prince and The Revolution</p>
     </header>
 
+    <!-- Main Content -->
     <main>
 
-        <h2>Introduction</h2>
+        <section>
+            <h2>Introduction</h2>
 
-        <p>
-            <i>Purple Rain</i> is a song by American musician Prince and his
-            backing band The Revolution. It is the title track from the 1984
-            album of the same name, which in turn is the soundtrack album for
-            the 1984 film of the same name.
-        </p>
+            <p>
+                <i>Purple Rain</i> is a song by American musician Prince and his
+                backing band The Revolution. It is the title track from the 1984
+                album of the same name, which in turn is the soundtrack album for
+                the 1984 film of the same name.
+            </p>
+        </section>
 
-        <h2>Origins</h2>
+        <section>
+            <h2>Origins</h2>
 
-        <p>
-            Originally written as a country song and intended to be a
-            collaboration with Stevie Nicks, Prince explained the meaning
-            of the song as follows:
-            <i>"When there's blood in the sky... red and blue = purple.
-            Purple rain pertains to the end of the world and being with the
-            one you love and letting your faith/god guide you through the
-            purple rain."</i>
-        </p>
+            <p>
+                Originally written as a country song and intended to be a
+                collaboration with Stevie Nicks, Prince explained the meaning
+                of the song as follows:
+            </p>
 
-        <h2><i>Recording</i></h2>
+            <blockquote class="quote">
+                "When there's blood in the sky... red and blue = purple.
+                Purple rain pertains to the end of the world and being with the
+                one you love and letting your faith/god guide you through the
+                purple rain."
+            </blockquote>
+        </section>
 
-        <p>
-            <i>
+        <section>
+            <h2>Recording</h2>
+
+            <p>
                 The song was recorded during a benefit concert for the
                 Minnesota Dance Theatre at the First Avenue nightclub in
                 Minneapolis on August 3, 1983. City Pages described the
                 70-minute performance as Prince's "sweatiest and most
                 soulful hometown concert yet."
-            </i>
-        </p>
+            </p>
+        </section>
 
-        <h2><i>Reception and legacy</i></h2>
+        <section>
+            <h2>Reception and Legacy</h2>
 
-        <p>
-            <i>
+            <p>
                 The song ranked number 144 on the Rolling Stone list of the
                 500 Greatest Songs of All Time. Q magazine placed it at
                 number 40 in its list of the 100 Greatest Guitar Tracks,
                 and Pitchfork named it the best song of the 1980s. The song
                 is also included in The Rock and Roll Hall of Fame's
                 500 Songs that Shaped Rock and Roll.
-            </i>
+            </p>
+        </section>
+
+        <p class="source">
+            Source: Wikipedia.
         </p>
 
-        <p>
-            <b><i>Source: Wikipedia.</i></b>
-        </p>
-
-        <p>
-            <a href="https://www.munnelly.com/dorset/lessons/assets/index.html">
-                <b><i>Back to Home page</i></b>
+        <p class="mt-8 text-center">
+            <a href="../index.html"
+               class="inline-block bg-purple-900 text-white px-6 py-3 rounded-lg hover:bg-purple-800 transition">
+                &larr; Back to Home Page
             </a>
         </p>
 
     </main>
+
+    <footer>
+        <p>Purple Rain | Prince and The Revolution</p>
+        <p class="mt-1">Student: Nawfal Zahidi | Student ID: 80124</p>
+    </footer>
 
 </body>
 
