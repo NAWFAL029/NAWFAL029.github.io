@@ -1,145 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawfal Zahidi | Student Portfolio</title>
-    <meta name="description" content="Nawfal Zahidi's Computer Science student portfolio and web development projects.">
+
+    <!-- Nawfal Zahidi 80124 -->
+
+    <title>My Home Page - Nawfal Zahidi</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-        body { font-family: Arial, sans-serif; }
-        .container { width: 90%; max-width: 1100px; margin: auto; }
-        .nav-link:hover, .project-link:hover { color: #2563eb; }
-        .project-card { transition: transform .2s; }
-        .project-card:hover { transform: translateY(-4px); }
+
+    <style type="text/tailwindcss">
+
+        body {
+            @apply bg-green-400;
+        }
+
+        a {
+            @apply text-red-700;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: red;
+        }
+
+        header h2 {
+            font-size: 25px;
+            color: red;
+        }
+
+        header img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+        }
+
+        main {
+            text-align: center;
+            color: red;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section p {
+            font-size: 20px;
+            color: red;
+        }
+
     </style>
+
 </head>
-<body class="bg-slate-100 text-slate-800">
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-10 border-b bg-white">
-        <div class="container flex min-h-16 flex-wrap items-center justify-between gap-4 py-3">
-            <a href="#home" class="text-xl font-bold text-blue-800">NZ Portfolio</a>
-            <div class="flex flex-wrap gap-5 text-sm">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Welcome -->
-    <header id="home" class="bg-blue-900 px-5 py-24 text-center text-white">
-        <div class="mx-auto max-w-3xl">
-            <p class="text-blue-200">Welcome to my student portfolio</p>
-            <h1 class="my-4 text-5xl font-bold sm:text-6xl">Nawfal <span class="text-blue-300">Zahidi</span></h1>
-            <p class="mb-5 text-blue-100">Student ID: 80124</p>
-            <p class="leading-7 text-slate-200">
-                I am a Computer Science student interested in technology, web development,
-                and learning new computing skills. This website presents some of my projects
-                and shows what I have learned during my studies.
-            </p>
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a href="#about" class="rounded-md bg-white px-5 py-3 font-semibold text-blue-900 hover:bg-blue-100">About Me</a>
-                <a href="#projects" class="rounded-md border border-blue-200 px-5 py-3 hover:bg-blue-800">View My Projects</a>
-            </div>
-        </div>
+    <header>
+
+        <h1>Welcome to my page - NAWFAL ZAHIDI</h1>
+
+        <h2>Computer Science</h2>
+
+        <p>Student Name: Nawfal Zahidi</p>
+        <p>Student ID: 80124</p>
+
+        <img src="exercises/assets/img/dev.jpg"
+             alt="Computer and technology">
+
     </header>
 
-    <!-- About -->
-    <section id="about" class="container py-16">
-        <div class="mb-8 text-center">
-            <h2 class="text-3xl font-bold text-blue-900">About Me</h2>
-            <p class="mt-2 text-slate-600">My studies and interests</p>
-        </div>
-        <p class="mx-auto max-w-3xl text-center leading-7 text-slate-600">
-            My name is Nawfal Zahidi, and I am studying Computer Science.
-            I am developing my skills in HTML, CSS, and web development through
-            practical exercises and small projects. I enjoy exploring technology
-            and learning how websites are created.
-        </p>
-        <div class="mt-8 grid gap-6 sm:grid-cols-2">
-            <article class="rounded-lg border bg-white p-6">
-                <h3 class="mb-2 text-xl font-bold text-blue-800">🎓 My Education</h3>
-                <p class="text-slate-600">Building my knowledge through Computer Science coursework and practical projects.</p>
-            </article>
-            <article class="rounded-lg border bg-white p-6">
-                <h3 class="mb-2 text-xl font-bold text-blue-800">💻 My Interests</h3>
-                <p class="text-slate-600">Web development, computing, cybersecurity, and discovering new technologies.</p>
-            </article>
-        </div>
-    </section>
+    <main>
 
-    <!-- Projects -->
-    <section id="projects" class="bg-slate-200 py-16">
-        <div class="container">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-bold text-blue-900">My Projects</h2>
-                <p class="mt-2 text-slate-600">Five webpages I have worked on during my studies.</p>
-            </div>
-            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <section>
 
-                <article class="project-card rounded-lg border bg-white p-6">
-                    <p class="mb-3 text-sm font-semibold text-blue-700">PROJECT 01</p>
-                    <h3 class="mb-2 text-lg font-bold">A Tale of Two Cities</h3>
-                    <p class="text-sm text-slate-600">A webpage about Charles Dickens's famous novel.</p>
-                    <a class="project-link mt-5 inline-block font-semibold text-blue-700" href="exercises/page-1.html">View Project →</a>
-                </article>
-
-                <article class="project-card rounded-lg border bg-white p-6">
-                    <p class="mb-3 text-sm font-semibold text-blue-700">PROJECT 02</p>
-                    <h3 class="mb-2 text-lg font-bold">Purple Rain</h3>
-                    <p class="text-sm text-slate-600">A webpage about Prince and his famous song.</p>
-                    <a class="project-link mt-5 inline-block font-semibold text-blue-700" href="exercises/page-2.html">View Project →</a>
-                </article>
-
-                <article class="project-card rounded-lg border bg-white p-6">
-                    <p class="mb-3 text-sm font-semibold text-blue-700">PROJECT 03</p>
-                    <h3 class="mb-2 text-lg font-bold">Webpage with Sections</h3>
-                    <p class="text-sm text-slate-600">Practice with HTML headings and page structure.</p>
-                    <a class="project-link mt-5 inline-block font-semibold text-blue-700" href="exercises/page-3.html">View Project →</a>
-                </article>
-
-                <article class="project-card rounded-lg border bg-white p-6">
-                    <p class="mb-3 text-sm font-semibold text-blue-700">PROJECT 04</p>
-                    <h3 class="mb-2 text-lg font-bold">Vincent van Gogh</h3>
-                    <p class="text-sm text-slate-600">An introduction to popular places to visit in Ireland.</p>
-                    <a class="project-link mt-5 inline-block font-semibold text-blue-700" href="exercises/page-4.html">View Project →</a>
-                </article>
-
-                <article class="project-card rounded-lg border bg-white p-6">
-                    <p class="mb-3 text-sm font-semibold text-blue-700">PROJECT 05</p>
-                    <h3 class="mb-2 text-lg font-bold">Ireland's Top Five Visitor Attractions</h3>
-                    <p class="text-sm text-slate-600">A webpage about the artist's life and artwork.</p>
-                    <a class="project-link mt-5 inline-block font-semibold text-blue-700" href="exercises/page-5.html">View Project →</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="container py-16">
-        <div class="mx-auto max-w-2xl rounded-lg border bg-white p-8 text-center">
-            <h2 class="text-3xl font-bold text-blue-900">Thank You for Visiting!</h2>
-            <p class="my-4 text-slate-600">
-                Thank you for exploring my portfolio. I look forward to improving
-                my skills and creating more projects during my studies.
+            <p>
+                This is my portfolio website. Here you can find my projects
+                and some of the work I have completed during my studies.
             </p>
-            <a href="mailto:80124@student.dorset-college.ie" class="inline-block rounded-md bg-blue-800 px-5 py-3 font-semibold text-white hover:bg-blue-900">Contact Me</a>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-950 py-5 text-sm text-blue-100">
-        <div class="container flex flex-wrap items-center justify-between gap-3">
-            <p>© 2026 Nawfal Zahidi</p>
-            <p>Student ID: 80124</p>
-            <a href="#home" class="hover:text-white">Back to top ↑</a>
-        </div>
-    </footer>
+            <p>
+                <a href="exercises/page-1.html">A Tale of Two Cities</a>
+            </p>
+
+            <p>
+                <a href="exercises/page-2.html">Purple Rain</a>
+            </p>
+
+            <p>
+                <a href="exercises/page-3.html">Webpage with Sections</a>
+            </p>
+
+            <p>
+                <a href="exercises/page-4.html">Vincent van Gogh</a>
+            </p>
+
+            <p>
+                <a href="exercises/page-5.html">Ireland's Top Five Visitor Attractions</a>
+            </p>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
